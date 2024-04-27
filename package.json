@@ -15,8 +15,7 @@
     "test": "vitest",
     "test:verbose": "vitest --silent=false",
     "test:watch": "vitest --silent=false --watch",
-    "test:ci": "vitest --coverage",
-    "lint:staged": "eslint --fix"
+    "test:ci": "vitest --coverage"
   },
   "dependencies": {
     "react": "^18.2.0",

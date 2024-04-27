@@ -1,6 +1,6 @@
 {
-    "src/**/*.(ts|tsx)": [
-      "eslint",
-      "npm run test"
-    ]
-  }
+  "*.{ts,tsx}": [
+    "eslint --fix",
+    "vitest related"
+  ]
+}
