@@ -16,6 +16,7 @@
     "react-refresh"
   ],
   "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
     "import/order": ["error", {
       "alphabetize": { "order": "asc", "caseInsensitive": true },
       "groups": ["builtin", "external", "parent", "internal", "sibling", "index"],
