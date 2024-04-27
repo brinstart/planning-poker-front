@@ -1,10 +1,9 @@
-import './app.css';
+import './app.css'
 
-function App() {
-
+function App (): JSX.Element {
   return (
     <h1>Planning Poker!</h1>
-  );
+  )
 }
 
-export default App;
+export default App
