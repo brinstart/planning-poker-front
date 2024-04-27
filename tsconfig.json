@@ -20,17 +20,13 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["*"],
-      "@utils/*": ["utils/*"],
-      "@pages/*": ["pages/*"],
-      "@domain/*": ["domain/*"],
-      "@translate/*": ["translate/*"],
-      "@assets": ["assets"]
+      "@/*": ["src/*"],
+      "~/*": [ "test/*"]
     }
   },
   "include": ["src/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }
