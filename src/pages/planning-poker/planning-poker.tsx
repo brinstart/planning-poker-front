@@ -1,6 +1,5 @@
 import { Button } from 'primereact/button'
-import { Chips } from 'primereact/chips'
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 import Heading from '@/domain/common/heading'
@@ -12,13 +11,10 @@ const Wrapper = styled.div`
 `
 
 const PlanningPoker: React.FC = () => {
-  const [value, setValue] = useState<string[]>([])
-
   return (
     <>
       <Heading/>
       <Wrapper>
-        <Chips value={value} onChange={(e) => { setValue(e?.value ?? []) }} />
         <Button label="Check" icon="pi pi-check" />
       </Wrapper>
     </>
