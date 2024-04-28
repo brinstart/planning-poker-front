@@ -2,6 +2,10 @@
   "name": "planning-poker-front",
   "private": true,
   "version": "0.0.0",
+  "engines": {
+    "node": "^20.12.2",
+    "npm": "^10.5.0"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +13,9 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest",
-    "lint:staged": "eslint --fix"
+    "test:verbose": "vitest --silent=false",
+    "test:watch": "vitest --silent=false --watch",
+    "test:ci": "vitest --coverage"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -23,7 +29,12 @@
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-istanbul": "^1.5.2",
     "eslint": "^8.57.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "git-commit-msg-linter": "^5.0.7",
