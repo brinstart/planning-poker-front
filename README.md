@@ -1,6 +1,6 @@
-# Brinstart 🎮🕹️🎯
+# Planning Poker 🎮🕹️🎯
 
-Brinstart is a Planning Poker like you've never seen before.
+Planning Poker powered by Brinstart is like you've never seen before.
 This repository is responsible for everything beautiful that you see in our application. Enjoy 💅🏽
 
 ### Setup
@@ -15,5 +15,5 @@ npm install
 ```
 **Run the project**
 ```bash
-npm run start
+npm run dev
 ```

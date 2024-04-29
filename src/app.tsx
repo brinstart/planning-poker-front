@@ -1,8 +1,15 @@
+import { PrimeReactProvider } from 'primereact/api'
+import React from 'react'
+import 'primereact/resources/themes/lara-light-cyan/theme.css'
+
+import PlanningPoker from '@/pages/planning-poker/planning-poker'
 import '@/app.css'
 
-function App (): JSX.Element {
+const App: React.FC = () => {
   return (
-    <h1>Planning Poker!</h1>
+    <PrimeReactProvider>
+      <PlanningPoker />
+    </PrimeReactProvider>
   )
 }
 
